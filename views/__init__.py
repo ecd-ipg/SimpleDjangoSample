@@ -1,0 +1,1 @@
+from ecd_ipg_sample.views.ipg_demo import IpgDemoView, IpgDemoBackView

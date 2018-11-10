@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>ECD IPG SAMPLE</h2>
+
+<form method="post" action="https://ecd.shaparak.ir/ipg_ecd/PayStart">
+
+
+
+  <!-- set token -->
+  <input type="hidden" name="Token" placeholder="Token" value="{{ token }}" />
+
+
+
+  <input type="text" name="amount" value="1000" readonly="readonly">
+  <br><br>
+  <input type="submit" value="پرداخت">
+</form>
+
+<p>
+    {% if token %}
+    شناسه پرداخت با موفقیت دریافت شده است. برای انتقال به درگاه پرداخت بر روی دکمه پرداخت کلیک نمایید
+    {% else %}
+    خطا در دریافت شناسه پرداخت
+    {% endif %}
+
+</p>
+
+</body>
+</html>
